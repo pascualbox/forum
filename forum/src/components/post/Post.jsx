@@ -1,9 +1,7 @@
-/** @format */
-
 import React from "react";
-
-import PostHeader from "./components/postHeader/PostHeader";
-import PostBody from "./components/postBody/PostBody";
+import PostHeader from "../postHeader/PostHeader";
+import PostBody from "../postBody/PostBody";
+import "./Post.scss";
 
 function Post(props) {
   return (
@@ -16,11 +14,13 @@ function Post(props) {
           data-parent="#accordionExample"
         >
           <div class="card-body">
-            <PostHeader title="Pepe" category="Masajista de Tello" />
-            <hr className="separator"></hr>
-            <PostBody content={content} />
+            <div className="content">
+              <PostHeader title="Pepe" category="Masajista de Tello" />
+              <hr className="hr" />
+              <PostBody content={element} />
+            </div>
           </div>
-          <hr />
+          <hr className="separator" />
         </div>
       ))}
     </div>

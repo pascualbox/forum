@@ -3,7 +3,6 @@ div.postBody{
     letter-spacing: 0.02px;
     line-height: 1.2;
     display: block;
-    width: 500px;
     color: black;
     background-color: #fff;
     border-left: 4px solid $main-color;
@@ -27,6 +26,8 @@ tr.postBody{
     border-color: inherit;
 }
 td.postBody{
+    text-align: left;
     font-size: 1rem;
     width: 100%;
+    padding: 0 1rem 1rem 1rem;
 }

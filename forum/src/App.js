@@ -1,11 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/button/Button'
-import Switch from './components/switch/Switch'
-import './components/button/Button.scss'
-import Modal from './components/modal/Modal';
-import './components/modal/Modal.scss';
 import { useState } from 'react';
+import Home from './pages/Home/Home';
 
 function App() {
   let content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis aliquet erat vel egestas. Nunc dapibus ut nisl eu tristique. Ut sollicitudin sed ipsum sed congue. Maecenas maximus blandit eros, eget tempus lorem bibendum imperdiet. Proin a hendrerit lorem, a dignissim dui. Vivamus pretium eu neque sed condimentum. Morbi mattis, mauris mollis fermentum faucibus, neque urna iaculis magna, eu congue velit nisl id diam. Curabitur imperdiet enim ac dui varius, et aliquet tortor consectetur. Aliquam sagittis justo ac varius pulvinar. Donec sagittis enim ac nisl convallis iaculis nec non est."
@@ -22,16 +18,9 @@ function App() {
     setchecked(!checked);
     this.setState({ checked });
   }
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          <Button message="Enviar respuesta"/>
-          <Switch onChange={handleChange} checked={checked} />
-          <button className='primaryBtn' onClick={() => setIsOpen(true)}>Tello</button>
-          {isOpen && <Modal setIsOpen={setIsOpen} />}
-      </header>
+      <Home/>
     </div>
   );
 }
