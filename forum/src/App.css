@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+.separator{
+  transition: var(--transition);
+    width: 100%;
+    background-color: var(--separator-color);
+    height: 1px;
+    display: block;
+}
 
 .App-logo {
   height: 40vmin;
