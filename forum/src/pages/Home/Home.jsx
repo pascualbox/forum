@@ -1,5 +1,4 @@
 /** @format */
-
 import Post from "../../components/post/Post";
 import HeaderThread from "../../components/headerThread/HeaderThread";
 import "./Home.scss";
