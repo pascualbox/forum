@@ -1,7 +1,9 @@
-import React from "react";
+/** @format */
+
 import Post from "../../components/post/Post";
 import HeaderThread from "../../components/headerThread/HeaderThread";
 import "./Home.scss";
+import { Fab } from "@mui/material";
 
 function Home() {
   const text =
@@ -13,13 +15,18 @@ function Home() {
 
   return (
     <div class="accordion containerMain" id="accordionExample">
+      <Fab color="info" aria-label="add" variant="extended" classes="fab">
+        Añadir
+      </Fab>
       <div class="card">
         <HeaderThread
           title={"Consulting serius things"}
           target={"#collapseOne"}
           controls={"collapseOne"}
         />
-        <Post array={posts1} id="collapseOne" />
+        <div className="scroll">
+          <Post array={posts1} id="collapseOne" />
+        </div>
       </div>
       <div class="card title">
         <HeaderThread
@@ -27,7 +34,9 @@ function Home() {
           target={"#collapseTwo"}
           controls={"collapseTwo"}
         />
-        <Post array={posts2} id="collapseTwo" />
+        <div className="scroll">
+          <Post array={posts2} id="collapseTwo" />
+        </div>
       </div>
       <div class="card">
         <HeaderThread
@@ -35,7 +44,9 @@ function Home() {
           target={"#collapseThree"}
           controls={"collapseThree"}
         />
-        <Post array={posts3} id={"collapseThree"} />
+        <div className="scroll">
+          <Post array={posts3} id={"collapseThree"} />
+        </div>
       </div>
       <div class="card ">
         <HeaderThread
@@ -43,7 +54,9 @@ function Home() {
           target={"#collapseFour"}
           controls={"collapseFour"}
         />
-        <Post array={posts4} id={"collapseFour"} />
+        <div className="scroll">
+          <Post array={posts4} id={"collapseFour"} />
+        </div>
       </div>
     </div>
   );

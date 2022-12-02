@@ -1,5 +1,6 @@
-import React from "react";
+/** @format */
 import "./HeaderThread.scss";
+import React from "react";
 
 function HeaderThread(props) {
   return (
@@ -11,7 +12,7 @@ function HeaderThread(props) {
             type="button"
             data-toggle="collapse"
             data-target={props.target}
-            aria-expanded="false"
+            aria-expanded={false}
             aria-controls={props.controls}
           >
             {props.title}

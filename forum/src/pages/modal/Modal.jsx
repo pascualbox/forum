@@ -1,11 +1,10 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
-import Button from "../button/Button";
-import Switch from "../switch/Switch";
+import Button from "../../components/button/Button";
+import Switch from "../../components/switch/Switch";
 import "./Modal.scss";
-import { useState } from "react";
 
 const Modal = ({ setIsOpen }) => {
   const [checked, setchecked] = useState(false);
@@ -15,7 +14,6 @@ const Modal = ({ setIsOpen }) => {
   }
   return (
     <>
-      <div className="darkBG" onClick={() => setIsOpen(false)} />
       <div className="centered">
         <div className="modal">
           <div className="modalHeader">

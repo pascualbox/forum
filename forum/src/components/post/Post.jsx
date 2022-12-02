@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import PostHeader from "../postHeader/PostHeader";
 import PostBody from "../postBody/PostBody";
@@ -9,7 +11,7 @@ function Post(props) {
       {props.array.map((element) => (
         <div
           id={props.id}
-          class="collapse show"
+          class="collapse "
           aria-labelledby="headingOne"
           data-parent="#accordionExample"
         >
