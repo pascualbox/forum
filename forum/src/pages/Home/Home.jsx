@@ -15,10 +15,16 @@ function Home() {
 
   return (
     <div class="accordion containerMain" id="accordionExample">
-      <Fab color="info" aria-label="add" variant="extended" classes="fab">
-        Añadir
-      </Fab>
       <div class="card">
+        <Fab
+          color="info"
+          aria-label="add"
+          variant="extended"
+          classes="fab"
+          href="/Modal?thread=hilillo"
+        >
+          Añadir
+        </Fab>
         <HeaderThread
           title={"Consulting serius things"}
           target={"#collapseOne"}
@@ -28,7 +34,16 @@ function Home() {
           <Post array={posts1} id="collapseOne" />
         </div>
       </div>
-      <div class="card title">
+      <div class="card ">
+        <Fab
+          color="info"
+          aria-label="add"
+          variant="extended"
+          classes="fab"
+          href="/Modal?thread=hilillo"
+        >
+          Añadir
+        </Fab>
         <HeaderThread
           title={"Car content"}
           target={"#collapseTwo"}
@@ -39,6 +54,15 @@ function Home() {
         </div>
       </div>
       <div class="card">
+        <Fab
+          color="info"
+          aria-label="add"
+          variant="extended"
+          classes="fab"
+          href="/Modal?thread=hilillo"
+        >
+          Añadir
+        </Fab>
         <HeaderThread
           title={"React discussions"}
           target={"#collapseThree"}
@@ -49,6 +73,15 @@ function Home() {
         </div>
       </div>
       <div class="card ">
+        <Fab
+          color="info"
+          aria-label="add"
+          variant="extended"
+          classes="fab"
+          href="/Modal?thread=hilillo"
+        >
+          Añadir
+        </Fab>
         <HeaderThread
           title={"Random doubts"}
           target={"#collapseFour"}
