@@ -1,15 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/button/Button'
+import Switch from "react-switch";
+import { useState } from 'react';
 
 function App() {
+  const [checked, setchecked] = useState(false);
+  function handleChange(checked) {
+    setchecked(!checked);
+    this.setState({ checked });
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-        <Button message="Enviar respuesta"/>
+          <Button message="Enviar respuesta" />
+          <Switch onChange={handleChange} checked={checked}/>
         </p>
         <a
           className="App-link"
