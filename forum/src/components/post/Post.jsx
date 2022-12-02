@@ -16,7 +16,7 @@ function Post(props) {
           <div class="card-body">
             <div className="content">
               <PostHeader title="Pepe" category="Masajista de Tello" />
-              <hr />
+              <hr className="hr" />
               <PostBody content={element} />
             </div>
           </div>

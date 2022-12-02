@@ -1,4 +1,5 @@
 import React from "react";
+import "./HeaderThread.scss";
 
 function HeaderThread(props) {
   return (
@@ -6,7 +7,7 @@ function HeaderThread(props) {
       <div class="card-header" id="headingThree">
         <h2 class="mb-0">
           <button
-            class="btn btn-link collapsed"
+            class="btn btn-link collapsed title"
             type="button"
             data-toggle="collapse"
             data-target={props.target}
