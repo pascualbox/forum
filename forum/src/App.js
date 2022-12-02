@@ -1,9 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/button/Button'
-import Switch from './components/switch/Switch'
-import Post from './components/post/Post';
 import { useState } from 'react';
+import Home from './pages/Home/Home';
 
 function App() {
   let content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis aliquet erat vel egestas. Nunc dapibus ut nisl eu tristique. Ut sollicitudin sed ipsum sed congue. Maecenas maximus blandit eros, eget tempus lorem bibendum imperdiet. Proin a hendrerit lorem, a dignissim dui. Vivamus pretium eu neque sed condimentum. Morbi mattis, mauris mollis fermentum faucibus, neque urna iaculis magna, eu congue velit nisl id diam. Curabitur imperdiet enim ac dui varius, et aliquet tortor consectetur. Aliquam sagittis justo ac varius pulvinar. Donec sagittis enim ac nisl convallis iaculis nec non est."
@@ -22,7 +20,7 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -38,7 +36,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Home/>
     </div>
   );
 }

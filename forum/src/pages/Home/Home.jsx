@@ -10,6 +10,25 @@ function Home() {
   const posts3 = [text, text, text, text];
   const posts4 = [text, text, text, text];
 
+  const postHandle = (event) => {
+    switch (event.id) {
+      case 1:
+        posts1.concat(posts1, event.post);
+        break;
+      case 2:
+        posts1.concat(posts2, event.post);
+        break;
+      case 3:
+        posts1.concat(posts3, event.post);
+        break;
+      case 4:
+        posts1.concat(posts4, event.post);
+        break;
+
+      default:
+        break;
+    }
+  };
   return (
     <div class="accordion" id="accordionExample">
       <div class="card">

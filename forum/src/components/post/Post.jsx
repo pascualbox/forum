@@ -1,4 +1,7 @@
 import React from "react";
+import PostHeader from "../postHeader/PostHeader";
+import PostBody from "../postBody/PostBody";
+import "./Post.scss";
 
 function Post(props) {
   return (
@@ -10,8 +13,14 @@ function Post(props) {
           aria-labelledby="headingOne"
           data-parent="#accordionExample"
         >
-          <div class="card-body">{element}</div>
-          <hr />
+          <div class="card-body">
+            <div className="content">
+              <PostHeader title="Pepe" category="Masajista de Tello" />
+              <hr />
+              <PostBody content={element} />
+            </div>
+          </div>
+          <hr className="separator" />
         </div>
       ))}
     </div>
