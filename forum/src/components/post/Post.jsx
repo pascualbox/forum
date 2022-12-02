@@ -12,7 +12,6 @@ function Post(props) {
           aria-labelledby="headingOne"
           data-parent="#accordionExample"
         >
-<<<<<<< HEAD
           <div class="card-body">
             <div className="content">
               <PostHeader title="Pepe" category="Masajista de Tello" />
@@ -21,10 +20,6 @@ function Post(props) {
             </div>
           </div>
           <hr className="separator" />
-=======
-          <div class="card-body">{element}</div>
-          <hr />
->>>>>>> parent of e2f7a06 (cositas)
         </div>
       ))}
     </div>
