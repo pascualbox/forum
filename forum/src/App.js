@@ -4,6 +4,9 @@ import Button from './components/button/Button'
 import Switch from './components/switch/Switch'
 import Post from './components/post/Post';
 import { useState } from 'react';
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/Home/Home';
+import Modal from './pages/modal/Modal';
 
 function App() {
   const [checked, setchecked] = useState(false);

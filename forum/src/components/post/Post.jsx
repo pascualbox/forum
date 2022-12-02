@@ -1,6 +1,8 @@
 /** @format */
 
 import React from "react";
+import PostHeader from "../postHeader/PostHeader";
+import PostBody from "../postBody/PostBody";
 
 function Post(props) {
   return (
