@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/button/Button'
 import Switch from './components/switch/Switch'
-import Post from './components/post/Post';
+import './components/button/Button.scss'
+import Modal from './components/modal/Modal';
+import './components/modal/Modal.scss';
 import { useState } from 'react';
 
 function App() {
@@ -20,24 +22,15 @@ function App() {
     setchecked(!checked);
     this.setState({ checked });
   }
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <Button message="Enviar respuesta" />
+          <Button message="Enviar respuesta"/>
           <Switch onChange={handleChange} checked={checked} />
-          
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <button className='primaryBtn' onClick={() => setIsOpen(true)}>Tello</button>
+          {isOpen && <Modal setIsOpen={setIsOpen} />}
       </header>
     </div>
   );
