@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/button/Button'
-import Switch from "react-switch";
+import Switch from './components/switch/Switch'
 import { useState } from 'react';
 
 function App() {
