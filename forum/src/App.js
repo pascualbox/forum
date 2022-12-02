@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/button/Button'
 import Switch from './components/switch/Switch'
+import PostHeader from './components/postHeader/PostHeader';
 import { useState } from 'react';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
           <Button message="Enviar respuesta" />
-          <Switch onChange={handleChange} checked={checked}/>
+          <Switch onChange={handleChange} checked={checked} />
+          <PostHeader title="Pepe" category="Masajista de Tello"/>
         </p>
         <a
           className="App-link"

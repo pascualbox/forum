@@ -1,0 +1,32 @@
+@import '../../vars.scss';
+.postHeader{
+    display: flex;
+    flex-direction: row;
+}
+.postHeaderLeftDiv{
+    width: 25%;
+    background-color: red;
+}
+.postHeaderCenterDiv{
+    padding: 0px 5px;
+    width: 50%;
+    color: $main-color;
+}
+.postHeaderRightDiv{
+    width: 25%;
+    background-color: red;
+}
+.titleDiv{
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $main-color;
+}
+.categoryDiv{
+    margin-top: 4px;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-align: left;
+    color: $subtitle-color;
+}
