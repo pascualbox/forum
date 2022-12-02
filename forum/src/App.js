@@ -13,7 +13,6 @@ function App() {
   }
   return (
     <div className="App">
-      <Home/>
       <Routes>
         <Route path="/" element={<Home />} exact></Route>
         <Route path="/modal" element={<Modal />} exact></Route>
